@@ -1,0 +1,74 @@
+{
+  "candidates": [
+    {
+      "firstName": "Milos",
+      "lastName": "Radosavljevic",
+      "id": 1
+    },
+    {
+      "firstName": "Petar ",
+      "lastName": "Petrovic",
+      "id": 2
+    },
+    {
+      "firstName": "Marko",
+      "lastName": "Markovic",
+      "id": 3
+    },
+    {
+      "firstName": "John",
+      "lastName": "Goodman",
+      "id": 6
+    },
+    {
+      "firstName": "Tamara ",
+      "lastName": "Manojovic",
+      "id": 8
+    },
+    {
+      "firstName": "milo",
+      "lastName": "markovic",
+      "id": 9
+    },
+    {
+      "firstName": "Milos",
+      "lastName": "Radosavljevic",
+      "id": 10
+    },
+    {
+      "firstName": "Milos",
+      "lastName": "popop",
+      "id": 11
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "id": 12
+    },
+    {
+      "firstName": "Milos",
+      "lastName": "Milosavljevic",
+      "id": 13
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "id": 14
+    },
+    {
+      "firstName": "Milos",
+      "lastName": "Radosavljevic",
+      "id": 15
+    }
+  ],
+  "categories": [
+    {
+      "categoryName": "c++",
+      "id": 2
+    },
+    {
+      "categoryName": "Java",
+      "id": 3
+    }
+  ]
+}
