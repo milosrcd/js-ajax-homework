@@ -59,16 +59,21 @@
       "firstName": "Milos",
       "lastName": "Radosavljevic",
       "id": 15
+    },
+    {
+      "firstName": "Milos",
+      "lastName": "Petrovic",
+      "id": 16
     }
   ],
   "categories": [
     {
-      "categoryName": "c++",
-      "id": 2
-    },
-    {
       "categoryName": "Java",
       "id": 3
+    },
+    {
+      "categoryName": "javaScript",
+      "id": 4
     }
   ]
 }

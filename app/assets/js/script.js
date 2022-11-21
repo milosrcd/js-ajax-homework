@@ -1,8 +1,10 @@
+const candidatesUrl = "http://localhost:3000/candidates/";
+
 document.getElementById("addCandidate").addEventListener("click", function () {
     const firstName = document.getElementById("firstName").value;
     const lastName = document.getElementById("lastName").value;
 
-    fetch("http://localhost:3000/candidates", {
+    fetch(candidatesUrl, {
         method: "POST",
         headers: {
             'Content-Type': 'application/json'
@@ -21,7 +23,7 @@ document.getElementById("addCandidate").addEventListener("click", function () {
 
 
 function renderCandidates() {
-    fetch("http://localhost:3000/candidates", {
+    fetch(candidatesUrl, {
         method: "GET"
     }).then(function (data) {
         return data.json();
@@ -77,7 +79,7 @@ function renderCandidates() {
 
                 const id = event.target.getAttribute("data-candidate-id");
 
-                fetch("http://localhost:3000/candidates/" + id, {
+                fetch(candidatesUrl + id, {
                     method: "DELETE"
                 }).then(function(){
                     alert("Candidate deleted!");
@@ -94,7 +96,7 @@ function renderCandidates() {
 
                 const id = event.target.getAttribute("data-candidate-id");
 
-                fetch("http://localhost:3000/candidates/" + id, {
+                fetch(candidatesUrl + id, {
                     method: "GET"
                 }).then(function(data){
                     return data.json();

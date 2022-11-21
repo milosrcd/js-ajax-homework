@@ -1,7 +1,10 @@
+
+const categoriesUrl = "http://localhost:3000/categories/";
+
 document.getElementById("addCategory").addEventListener("click", function () {
     const categoryName = document.getElementById("categoryName").value;
 
-    fetch("http://localhost:3000/categories", {
+    fetch(categoriesUrl, {
         method: "POST",
         headers: {
             'Content-Type': 'application/json'
@@ -18,7 +21,7 @@ document.getElementById("addCategory").addEventListener("click", function () {
 });
 
 function renderCategories() {
-    fetch("http://localhost:3000/categories", {
+    fetch(categoriesUrl, {
         method: "GET"
     }).then(function (data) {
         return data.json();
@@ -60,7 +63,7 @@ function renderCategories() {
 
                 const id = event.target.getAttribute("data-category-id");
 
-                fetch("http://localhost:3000/categories/" + id, {
+                fetch(categoriesUrl + id, {
                     method: "DELETE"
                 }).then(function () {
                     alert("Category deleted!");
